@@ -1,0 +1,6 @@
+﻿2014-01-04 - Meeting with Kevin
+-------------------------------
+- add post to twitter items on every answer selection
+- need "next" button image
+- get tweets of followees
+- leave out menu button for now

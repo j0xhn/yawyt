@@ -1,0 +1,213 @@
+[33mcommit 06d91540bfdcede8a59caf4dc717f0e6dfa3797b[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Wed Jan 29 20:22:25 2014 -0700
+
+    Some minor clean-up.
+
+[33mcommit 9598407e58aa3bca36fe593e97f0701ccb0da6b5[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Wed Jan 29 20:16:19 2014 -0700
+
+    Fixed responsive CSS for min-width 670px. This is normally base CSS for tablets, but is being applied to Samsung Galaxy S III, iPod 5 (iOS 7), and Samsung Galaxy Tab 10.1 alike.
+
+[33mcommit 267dc0d5d894736ce98f0428406866b3e2348d72[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Jan 27 19:39:10 2014 -0700
+
+    Another quick fix to the sign in button.
+
+[33mcommit 2cf46c8eef414274fcc62e9f456087aef1974f58[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Jan 27 19:30:23 2014 -0700
+
+    Hid radio buttons in option items.
+
+[33mcommit 8af390700aaeb65b992e8942b992771f323b3fce[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Jan 27 19:28:07 2014 -0700
+
+    Fixed Sign In button and gradient background for all pages.
+
+[33mcommit f3781d19972f8001b29794711e63c6e31ade756f[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Jan 27 19:04:15 2014 -0700
+
+    Did some code clean-up.
+
+[33mcommit af9967630bc06cff3dfd0b8e6dc36e297f0e7360[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Jan 27 18:59:49 2014 -0700
+
+    Fixed null reference exceptions by storing the current UserModel object in a session variable instead of in a static variable.
+
+[33mcommit 7a0762e7bf7017ddaa666908c09bd935349f4ca0[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Wed Jan 22 20:43:35 2014 -0700
+
+    - Added config value that allows us to host the application wherever we want without breaking resource references (also updated URLs to use that value).
+    - Got rid of unnecessary views, controllers, etc., that are MVC defaults.
+    - Set up deployment packaging.
+
+[33mcommit 55ffa548131b1f4fdab5ead20ad7e760a07395ac[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Wed Jan 22 19:07:33 2014 -0700
+
+    - Got "sign out" button working.
+    - Fixed cursor for "next" button
+
+[33mcommit 77696630b8a608a73ec20e3d912653016a1826f0[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Sat Jan 18 18:48:59 2014 -0700
+
+    - Replaced all cookie-based score-tracking with Parse database score-tracking.
+    - Fixed the validation error message for the case in which no matching user was found.
+    - Made constants for Parse database table and column names.
+
+[33mcommit 753a8b012fe9b7b9f4aaa2529239700f2cd12d49[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Sat Jan 18 17:52:44 2014 -0700
+
+    Got sign-in sort of working (it's using Parse as the back-end now). We still need to: 1) figure out what to do with the password and 2) use Parse to persist the running score (instead of relying on cookies to do it).
+
+[33mcommit ed4ec626e28f5a5d8474df4e785af14efc792302[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Sat Jan 18 12:59:39 2014 -0700
+
+    Did some refactoring and got cookie-based score tracking working. This should probably be changed to db-based tracking soon.
+
+[33mcommit c76bce71a16e1c170549b47b1898eb6a0d96902a[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Sat Jan 18 11:53:11 2014 -0700
+
+    Got the following working:
+    - Retrieve random tweets for "correct answer" followee.
+    - Randomize list of followees.
+    - Bind QuestionPageViewModel to Question view.
+
+[33mcommit b1f3eed3adb2d6ee9b830b2c316a34876ae03658[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Sat Jan 11 16:03:37 2014 -0700
+
+    Set the stage for randomizing followee data and getting ready to send a model to the question page.
+
+[33mcommit a4bf87471a8f58be2ad09b942561235f4f2483b2[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Sat Jan 11 15:46:50 2014 -0700
+
+    Added logic for:
+    - throwing an exception if the user has less than four followees
+    - selecting a random list of four followees from the list retrieved from Twitter
+
+[33mcommit f4ecedce55da691fa89adf52560d536a7955bee6[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Sat Jan 11 15:11:02 2014 -0700
+
+    - Successfully retrieved a list of followees from the Twitter REST API.
+    - Did some refactoring along the way.
+
+[33mcommit bb2f621682fab6d86bad1223b8284ecbdbc90c9e[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Sat Jan 11 13:28:14 2014 -0700
+
+    - Added notes file.
+    - Removed settings button from header.
+    - Changed "Sign in with Twitter": changed color and made it a span instead of an anchor tag.
+    - Made some javascript modifications in question/index.aspx.
+    - Switched over to using mock data layer for now.
+    - Commented out the Twitter calls for now.
+
+[33mcommit 16c385b3996ed90fc2f35898716ebe9c9db24f24[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Fri Dec 27 21:37:49 2013 -0700
+
+    Started rolling our own Twitter log-in solution (based largely on OAuthTwitterWrapper).
+
+[33mcommit b07c39364a1da87b7fb6caed38cc520d95aabc4c[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Fri Dec 27 11:57:06 2013 -0700
+
+    Tried using Spring's social libraries, but it turns out that they don't have one or .NET that targets Twitter's 1.1 API. Back to the drawing board.
+
+[33mcommit 495b03fc99016837ff78b5c5d26f99399596a9bb[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Fri Dec 27 00:11:07 2013 -0700
+
+    Multitudinous attempts at using various libraries to authenticate against Twitter. All have failed so far.
+
+[33mcommit f4dae3556a9ab399e8f78a58f235dcd1f5624a5e[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Thu Dec 26 14:56:07 2013 -0700
+
+    Added initial pieces for interacting with Parse (both from the server side and the client side).
+
+[33mcommit 4ba7b2999c8c04ab5fbc4f9a65631672eb4da8cf[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Tue Dec 24 16:45:07 2013 -0700
+
+    Tracking scores is still messed up, but I think it will get ironed out once we're actually persisting data to a database (instead of relying on cookies).
+
+[33mcommit c8d5206813416545fc4e5a8803bed5686d4e05a9[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Tue Dec 24 16:12:06 2013 -0700
+
+    Got data retrieval from the form to the controller working (more or less). Tracking the score is still a little iffy.
+
+[33mcommit 1c0ea7c160c4f9e9f3b09994b8a6c012b5b358e6[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Tue Dec 24 09:53:16 2013 -0700
+
+    Changed from using models to using view models for the question page.
+
+[33mcommit 9144c893d5b22c291dde2e1233b092f9d184f179[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 18:32:40 2013 -0700
+
+    Fixed some image URLs.
+
+[33mcommit 6b9c47c51d0f0e6ac10fde89f9ba334262a4492f[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 18:30:59 2013 -0700
+
+    Started getting things set up for the question page. Data model is attached. Displaying mock data right now. Need to wire up real data and scoring functionality.
+
+[33mcommit 2f578d27af49a08cd875b6ed29d5af3c63d4919f[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 17:59:53 2013 -0700
+
+    Got form validation working on SignIn page - sort of. It needs to check against a real data source still.
+
+[33mcommit b3dfbbd8515e5bf7d1134033d6f76521d98dd4ce[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 17:02:44 2013 -0700
+
+    Got the stupid TextBoxFor(...) calls to work.
+
+[33mcommit bc39241cbfebd41b92ba2f21e6c3ad64f838ebf5[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 16:49:40 2013 -0700
+
+    Started adding mock data layer, but MVC 2 is seemingly having problems with rendering textboxes using Html.TextBoxFor(...) and Html.EditorFor(...), so we may have to try to use web forms instead (yuck!).
+
+[33mcommit 0b936097c01415ecc7bad14e13f31e5c2dd0329b[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 14:34:34 2013 -0700
+
+    Added SignIn page and populated it with HTML/CSS to match mock-up.
+
+[33mcommit 041c05d4f408f93339e3c1e8ea5d9c5f5215771a[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 13:50:37 2013 -0700
+
+    Making sure everything was added to the changeset.
+
+[33mcommit b0588ca687cf362622b03f21b09fe854ed812a55[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 13:48:35 2013 -0700
+
+    Initial set-up of MVC solution.
+
+[33mcommit 64bdadfdfe2afdf2405755787c8ae37ee2087df7[m
+Author: Anthony Hart <ahart@ursaware.com>
+Date:   Mon Dec 23 10:34:26 2013 -0700
+
+    Set up initial GIT repository.

@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{380A1291-DC87-4DC3-9653-9F82386CE2EC}</ProjectGuid>
+    <ProjectTypeGuids>{F85E285D-A4E0-4152-9332-AB1D724D3325};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>YawytMvc2</RootNamespace>
+    <AssemblyName>YawytMvc2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>false</UseIISExpress>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ExcludeGeneratedDebugSymbol>true</ExcludeGeneratedDebugSymbol>
+    <PublishDatabases>false</PublishDatabases>
+    <ExcludeApp_Data>true</ExcludeApp_Data>
+    <PackageAsSingleFile>false</PackageAsSingleFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Parse\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Parse, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>lib\Parse\Parse.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\QuestionController.cs" />
+    <Compile Include="Controllers\SignInController.cs" />
+    <Compile Include="Data\DataAccessLayerFactory.cs" />
+    <Compile Include="Data\IDataAccessLayer.cs" />
+    <Compile Include="Data\MockDataAccessLayer.cs" />
+    <Compile Include="Data\ParseDataAccessLayer.cs" />
+    <Compile Include="Data\ParseDataTypeConverter.cs" />
+    <Compile Include="Data\ParseTableConstants.cs" />
+    <Compile Include="Extensions\DateExtensions.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Globals\ApplicationStateRepository.cs" />
+    <Compile Include="Globals\UserStateRepository.cs" />
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\AnswerModel.cs" />
+    <Compile Include="Models\QuestionModel.cs" />
+    <Compile Include="Models\SignInModel.cs" />
+    <Compile Include="Models\UserModel.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Twitter\AuthenticateSettings.cs" />
+    <Compile Include="Twitter\Authenticator.cs" />
+    <Compile Include="Twitter\FriendsIdsSettings.cs" />
+    <Compile Include="Twitter\FriendsListSettings.cs" />
+    <Compile Include="Twitter\JsonTypes\AuthResponse.cs" />
+    <Compile Include="Twitter\JsonTypes\Description.cs" />
+    <Compile Include="Twitter\JsonTypes\Entities.cs" />
+    <Compile Include="Twitter\JsonTypes\FriendsList.cs" />
+    <Compile Include="Twitter\JsonTypes\Hashtag.cs" />
+    <Compile Include="Twitter\JsonTypes\FriendsIds.cs" />
+    <Compile Include="Twitter\JsonTypes\Media.cs" />
+    <Compile Include="Twitter\JsonTypes\TimeLine.cs" />
+    <Compile Include="Twitter\JsonTypes\Url.cs" />
+    <Compile Include="Twitter\JsonTypes\User.cs" />
+    <Compile Include="Twitter\JsonTypes\UserEntities.cs" />
+    <Compile Include="Twitter\JsonTypes\UserMention.cs" />
+    <Compile Include="Twitter\JsonUtil.cs" />
+    <Compile Include="Twitter\OAuthTwitterHelper.cs" />
+    <Compile Include="Twitter\TimeLineSettings.cs" />
+    <Compile Include="Extensions\ListExtensions.cs" />
+    <Compile Include="ViewModels\AnswerViewModel.cs" />
+    <Compile Include="ViewModels\QuestionPageViewModel.cs" />
+    <Compile Include="Globals\CookieName.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\main.css" />
+    <Content Include="Global.asax" />
+    <Content Include="img\egg_darkblue.png" />
+    <Content Include="img\egg_green.png" />
+    <Content Include="img\egg_lightblue.png" />
+    <Content Include="img\egg_red.png" />
+    <Content Include="img\ic_next%402x.png" />
+    <Content Include="img\settingsbuttonlines.png" />
+    <Content Include="img\signin%402x.png" />
+    <Content Include="img\signout%402x.png" />
+    <Content Include="img\sign_in_yawyt.png" />
+    <Content Include="js\jquery-1.10.2.min.js" />
+    <Content Include="js\jquery.cookie.js" />
+    <Content Include="lib\LinqToTwitter\LinqToTwitter.dll" />
+    <Content Include="lib\LinqToTwitter\LinqToTwitterCP.dll" />
+    <Content Include="lib\oAuthTwitterWrapper\Newtonsoft.Json.dll" />
+    <Content Include="lib\oAuthTwitterWrapper\oAuthTwitterWrapper.dll" />
+    <Content Include="lib\Parse\Newtonsoft.Json.dll" />
+    <Content Include="lib\Parse\Parse.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet2.0and3.5\Common.Logging.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet2.0and3.5\Spring.Rest.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet2.0and3.5\Spring.Rest.xml" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet2.0and3.5\Spring.Social.Core.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet2.0and3.5\Spring.Social.Core.xml" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet2.0and3.5\Spring.Social.Twitter.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet2.0and3.5\Spring.Social.Twitter.xml" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet4.0\Common.Logging.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet4.0\Spring.Rest.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet4.0\Spring.Rest.xml" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet4.0\Spring.Social.Core.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet4.0\Spring.Social.Core.xml" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet4.0\Spring.Social.Twitter.dll" />
+    <Content Include="lib\Spring\twitterapi1.0\dotnet4.0\Spring.Social.Twitter.xml" />
+    <Content Include="notes\dbstructures.txt" />
+    <Content Include="notes\notes.txt" />
+    <Content Include="notes\parseinfo.txt" />
+    <Content Include="notes\twitter.txt" />
+    <Content Include="sdks\parse-1.2.15.min.js" />
+    <Content Include="Views\Question\Index.aspx" />
+    <Content Include="Views\Shared\_CommonScriptAndStyleReferences.ascx" />
+    <Content Include="Views\SignIn\Index.aspx" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\MicrosoftAjax.js" />
+    <Content Include="Scripts\MicrosoftAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.js" />
+    <Content Include="Scripts\MicrosoftMvcAjax.debug.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.js" />
+    <Content Include="Scripts\MicrosoftMvcValidation.debug.js" />
+    <Content Include="Views\Shared\Error.aspx" />
+    <Content Include="Views\Shared\Site.Master" />
+    <Content Include="Views\Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="lib\Spring\twitterapi1.1\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Shared\SignIn.Master" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target> -->
+  <Target Name="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(ProjectDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>False</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>65052</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>
+          </IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

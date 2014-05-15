@@ -1,0 +1,4 @@
+﻿To set up a new Twitter app, go to: https://dev.twitter.com/apps/new
+
+To modify an existing Twitter app, go to: https://dev.twitter.com/apps
+

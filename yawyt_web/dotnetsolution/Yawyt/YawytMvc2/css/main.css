@@ -1,0 +1,392 @@
+html, body {
+	clear: both;
+	height: 100%;
+	padding: 0;
+	margin: 0;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 18px;
+}
+
+fieldset {
+	border: none;
+	padding: 0;
+}
+
+img {
+	border: 0;
+}
+
+body {
+	background: #f7f7f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f7f7f7 0%, #abb5c0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#abb5c0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f7f7f7 0%,#abb5c0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#abb5c0',GradientType=0 ); /* IE6-9 */
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+}
+
+.backgroundGradientDefault {
+	background: #f7f7f7; /* Old browsers */
+	background: -moz-linear-gradient(top,  #f7f7f7 0%, #abb5c0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#abb5c0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #f7f7f7 0%,#abb5c0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#abb5c0',GradientType=0 ); /* IE6-9 */
+}
+
+.dropShadowDefault {
+	-webkit-box-shadow: 1px 1px 10px 0px rgba(31,31,31,1);
+	-moz-box-shadow: 1px 1px 10px 0px rgba(31,31,31,1);
+	box-shadow: 1px 1px 10px 0px rgba(31,31,31,1);
+}
+
+.headerBar {
+	position: relative;
+	width: 100%;
+	height: 8%;
+	background: #66ccff;
+}
+
+.textEntry {
+	height: 45px;
+	font-size: 22px;
+	padding: 0 10px;
+}
+
+/* --------------------------- SIGNIN PAGE --------------------------- */
+.signInLogo {
+	height: 13%;
+	width: auto;
+	display: block;
+	vertical-align: middle;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 24%;
+}
+
+.signInWithTwitterContainer {
+	text-align: center;
+	margin: 7% 10% 3% 10%;
+}
+
+.signInWithTwitter {
+	display: none;
+	
+	/*color: #66ccff;*/
+	color: #2288ff;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.signInTextEntryContainer {
+	margin: 5% auto;
+	text-align: center;
+}
+
+.signInTextEntryContainer .textEntry {
+	width: 80%;
+}
+
+.signInButton {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 40px;
+	background: none;
+	border: 0;
+}
+.signInButton img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%;
+	border: 0;
+}
+/* --------------------------- /SIGNIN PAGE --------------------------- */
+
+/* --------------------------- QUESTION PAGE --------------------------- */
+.signOutButton {
+	position: absolute;
+	left: 2%;
+	top: 15%;
+	width: auto;
+	height: 70%;
+}
+
+.headerLogo {
+	height: 55%;
+	width: auto;
+	display: block;
+	vertical-align: middle;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	padding-top: 10px;
+}
+
+.settingsButton {
+	position: absolute;
+	right: 2%;
+	top: 15%;
+	width: auto;
+	height: 65%;
+}
+
+.tweetTitle {
+	font-size: 24px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 2% 10% 2% 10%;
+}
+
+.tweetText {
+	font-size: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	margin: 2% 10% 2% 10%;
+}
+
+.optionsContainer {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.optionItem {
+	background: #fff;
+	margin: 5px 0;
+	padding: 5px;
+}
+
+.optionImage {
+	vertical-align: middle;
+}
+
+.optionText {
+	vertical-align: middle;
+	text-transform: uppercase;
+}
+
+.optionTextRadioButton {
+	display: none;
+}
+
+.optionCorrect {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background: #2bbaf0; /* Old browsers */
+	background: -moz-linear-gradient(top,  #78d5f9 0%, #abb5c0 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78d5f9), color-stop(100%,#2bbaf0)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #78d5f9 0%,#2bbaf0 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #78d5f9 0%,#2bbaf0 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #78d5f9 0%,#2bbaf0 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #78d5f9 0%,#2bbaf0 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78d5f9', endColorstr='#2bbaf0',GradientType=0 ); /* IE6-9 */
+}
+
+.optionIncorrect {
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background: #ff011c; /* Old browsers */
+	background: -moz-linear-gradient(top,  #ff4c5f 0%, #ff011c 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4c5f), color-stop(100%,#ff011c)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #ff4c5f 0%,#ff011c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #ff4c5f 0%,#ff011c 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #ff4c5f 0%,#ff011c 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #ff4c5f 0%,#ff011c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4c5f', endColorstr='#ff011c',GradientType=0 ); /* IE6-9 */
+}
+
+.scoreBox {
+	padding: 5px;
+	margin-left: 10%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	width: 110px;
+	display: inline-block;
+}
+
+.scoreBoxTitle {
+	text-align: center;
+	font-size: 12px;
+	text-transform: uppercase;
+	margin-bottom: 3px;
+}
+
+.scoreBoxText {
+	text-align: center;
+	font-size: 28px;
+	text-transform: uppercase;
+}
+
+.nextButton {
+	float: right;
+	text-align: center;
+	padding: 5px;
+	margin-right: 10%;
+	margin-top: 5%;
+	margin-bottom: 2%;
+	width: 110px;
+	display: inline-block;
+	cursor: pointer;
+}
+/* --------------------------- /QUESTION PAGE --------------------------- */
+
+/* --------------------------- MVC OVERRIDES --------------------------- */
+.field-validation-error {
+	display: block;
+	color: #cc0000;
+	text-align: left;
+	margin-left: 9%;
+}
+/* --------------------------- /MVC OVERRIDES --------------------------- */
+
+
+
+
+
+
+/*************************************************************** BASE CSS FOR PHONES **************************************************************/
+@media screen and (max-width:669px) {
+	/*body {
+		background: red;
+	}*/
+}
+
+/*************************************************************** BASE CSS FOR TABLETS **************************************************************/
+@media screen and (min-width: 670px) {
+	.headerBar{
+		height: 150px;
+	}
+	
+	/* --------------------------- SIGNIN PAGE --------------------------- */
+	.signInLogo {
+		height: 200px;
+		padding-top: 50px;
+	}
+	
+	.signInTextEntryContainer {
+		margin: 40px auto;
+	}
+	
+	.signInTextEntryContainer .textEntry {
+		width: 85%;
+		height: 165px;
+		font-size: 75px;
+		padding: 0px 30px;
+	}
+	
+	.signInButton {
+		margin: 40px auto;
+		height: auto;
+	}
+	
+	.signInButton img {
+		height: 150px;
+	}
+	/* --------------------------- /SIGNIN PAGE --------------------------- */
+	
+	/* --------------------------- QUESTION PAGE --------------------------- */
+	.headerLogo {
+		height: 100px;
+		padding-top: 20px;
+	}
+	
+	.signOutButton {
+		position: absolute;
+		left: 20px;
+		top: 28px;
+		width: auto;
+		height: 95px;
+	}
+
+	.tweetTitle {
+		font-size: 85px;
+	}
+
+	.tweetText {
+		font-size: 70px;
+		margin: 20px;
+	}
+
+	.optionsContainer {
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+	
+	.optionItem{
+		margin: 15px 0;
+	}
+	
+	.optionImage{
+		width: 150px;
+	}
+
+	.optionText {
+		font-size: 70px;
+	}
+
+	.scoreBox {
+		padding: 20px;
+		margin-left: 20px;
+		margin-top: 20px;
+		margin-bottom: 100px;
+		width: 320px;
+		display: inline-block;
+	}
+
+	.scoreBoxTitle {
+		text-align: center;
+		font-size: 45px;
+		text-transform: uppercase;
+		margin-bottom: 10px;
+	}
+
+	.scoreBoxText {
+		text-align: center;
+		font-size: 90px;
+		text-transform: uppercase;
+	}
+
+	.nextButton {
+		float: right;
+		text-align: center;
+		font-size: 70px;
+		padding: 20px;
+		margin-right: 20px;
+		margin-top: 20px;
+		margin-bottom: 10px;
+		width: 320px;
+		display: inline-block;
+		cursor: pointer;
+	}
+	/* --------------------------- /QUESTION PAGE --------------------------- */
+	
+	/* --------------------------- MVC OVERRIDES --------------------------- */
+	.field-validation-error {
+		margin-left: 5%;
+		font-size: 55px;
+		padding-bottom: 20px;
+	}
+	/* --------------------------- /MVC OVERRIDES --------------------------- */
+}
+
+/*************************************************************** CSS FOR PHONES LANDSCAPE **************************************************************/
+@media screen and (min-width:480px) and (max-width:669px) {
+	/*body {
+		background: blue;
+	}*/
+}
+
+/*************************************************************** CSS FOR TABLETS LANDSCAPE **************************************************************/
+@media screen and (min-width:1024px) {
+	/*body {
+		background: yellow;
+	}*/
+}
+

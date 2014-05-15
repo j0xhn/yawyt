@@ -1,0 +1,12 @@
+﻿user
+----
+id: guid (pk)
+username: varchar (unique)
+password: varchar
+
+score
+-----
+id: guid (pk)
+iduser: guid (fk)
+datetime: datetime
+score: int

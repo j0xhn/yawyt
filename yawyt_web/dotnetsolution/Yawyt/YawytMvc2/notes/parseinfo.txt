@@ -1,0 +1,108 @@
+﻿User Name:
+Email:
+Application Name: yawyt
+Application ID: VpsFCZDjW5xadq0HDsmVKJhnncvuqWo4hcupbkMd
+Client Key: IenpTB8b1yD7181mXaaQEQOKMLe6COinWjUv9omh
+Javascript Key: dbTV6v4AznEFlRqgIgp6uNGn7Gu0OHhwY1NCSIpI
+.NET Key: YJSFbOYxo1DhhdnRXHdfWVz4IGF5VilujRavLGPu
+REST API Key: DHraFslBFZqCJ9dMH6GuzSqWVtosYKidg1upira1
+Master Key: mG5ZAFV0YtjJgZJ1n3ZmonRFiDYQXdg9hh8Jpwh9
+
+
+<!-- ************************************ PARSE TESTS ************************************ -->
+<script src="http://www.parsecdn.com/js/parse-1.2.15.min.js"></script>
+<script type="text/javascript">
+	$(function () {
+		Parse.initialize("VpsFCZDjW5xadq0HDsmVKJhnncvuqWo4hcupbkMd", "dbTV6v4AznEFlRqgIgp6uNGn7Gu0OHhwY1NCSIpI");
+
+		$('#btnSave').click(function () {
+			saveTestObject();
+		});
+
+		$('#btnGet').click(function () {
+			getFirstBlah(alertSingleBlah);
+		});
+
+		$('#btnInc').click(function () {
+			incrementBlahQty();
+		});
+
+		function saveTestObject() {
+			var TestObject = Parse.Object.extend("TestObject");
+			var testObject = new TestObject();
+			testObject.save(
+				{ foo: "bar" },
+				{
+					success: function (object) {
+						alert("yay! it worked");
+					}
+				}
+			);
+		}
+
+		function getAllBlahs() {
+			var Blah = Parse.Object.extend("blah");
+			var query = new Parse.Query(Blah);
+			query.equalTo("name", "me");
+			query.find({
+				success: function (results) {
+					var msg = "";
+					for (var i = 0; i < results.length; i++) {
+						var blah = results[i];
+						msg += "name: " + blah.get("name") + ", qty: " + blah.get("qty") + "\r\n";
+					}
+					alert("Retrieved:\r\n" + msg);
+				},
+				error: alertError
+			});
+		}
+
+		function getFirstBlah(successCallback) {
+			var Blah = Parse.Object.extend("blah");
+			var query = new Parse.Query(Blah);
+			query.equalTo("name", "me");
+			query.first({
+				success: successCallback,
+				error: alertError
+			});
+		}
+
+		function incrementBlahQty() {
+			getFirstBlah(function(blah){
+				alert("Found the object...About to increment qty...");
+				blah.increment("qty");
+				blah.save(
+					null,
+					{
+						success: function () {
+							alert("Incremented qty...About to retrieve results...");
+							getFirstBlah(alertSingleBlah);
+						},
+						error: alertError
+					}
+				);
+			});
+		}
+
+		function alertSingleBlah(blah) {
+			var msg = "";
+			msg += "name: " + blah.get("name") + ", qty: " + blah.get("qty") + "\r\n";
+			alert("Retrieved:\r\n" + msg);
+		}
+
+		function alertError(error) {
+			alert("Error: " + error.code + " " + error.message);
+		}
+	});
+</script>
+
+<div>
+	<input type="button" id="btnSave" value="save" />
+</div>
+<div>
+	<input type="button" id="btnGet" value="get" />
+</div>
+<div>
+	<input type="button" id="btnInc" value="inc" />
+</div>
+<!-- ************************************ /PARSE TESTS ************************************ -->

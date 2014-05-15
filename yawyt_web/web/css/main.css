@@ -1,0 +1,222 @@
+html{
+    height: 100%;
+}
+
+body{
+    clear: both;
+    height: 100%;
+    margin: 0;
+    font-family: arial, helvetica, sans-serif;
+    font-size: 18px;
+}
+
+img{
+    border: 0;
+}
+
+.backgroundGradientDefault, body{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: #f7f7f7; /* Old browsers */
+    background: -moz-linear-gradient(top,  #f7f7f7 0%, #abb5c0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f7f7f7), color-stop(100%,#abb5c0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #f7f7f7 0%,#abb5c0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #f7f7f7 0%,#abb5c0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7f7f7', endColorstr='#abb5c0',GradientType=0 ); /* IE6-9 */
+}
+
+.dropShadowDefault{
+    -webkit-box-shadow: 1px 1px 10px 0px rgba(31,31,31,1);
+    -moz-box-shadow: 1px 1px 10px 0px rgba(31,31,31,1);
+    box-shadow: 1px 1px 10px 0px rgba(31,31,31,1);
+}
+
+.headerBar{
+    position: relative;
+    width: 100%;
+    height: 8%;
+    background: #66ccff;
+}
+
+.textEntry{
+    height: 45px;
+    font-size: 22px;
+    padding: 0 10px;
+}
+
+/* --------------------------- SIGNIN PAGE --------------------------- */
+
+.signInLogo{
+    height: 13%;
+    width: auto;
+    display: block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 24%;
+}
+
+.signInWithTwitterContainer{
+    text-align: center;
+    margin: 7% 10% 3% 10%;
+}
+
+.signInWithTwitter{
+    color: #66ccff;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.signInTextEntryContainer{
+    margin: 5% auto;
+    text-align: center;
+}
+
+.signInTextEntryContainer .textEntry{
+    width: 80%;
+}
+
+.signInButton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 8%;
+}
+
+/* --------------------------- /SIGNIN PAGE --------------------------- */
+
+/* --------------------------- QUESTION PAGE --------------------------- */
+
+.signOutButton{
+    position: absolute;
+    left: 2%;
+    top: 15%;
+    width: auto;
+    height: 70%;
+}
+
+.headerLogo{
+    height: 55%;
+    width: auto;
+    display: block;
+    vertical-align: middle;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+}
+
+.settingsButton{
+    position: absolute;
+    right: 2%;
+    top: 15%;
+    width: auto;
+    height: 65%;
+}
+
+.tweetTitle{
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2% 10% 2% 10%;
+}
+
+.tweetText{
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    margin: 2% 10% 2% 10%;
+}
+
+.optionsContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.optionItem{
+    background: #fff;
+    margin: 5px 0;
+    padding: 5px;
+}
+
+.optionImage{
+    vertical-align: middle;
+}
+
+.optionText{
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.optionCorrect{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: #2bbaf0; /* Old browsers */
+    background: -moz-linear-gradient(top,  #78d5f9 0%, #abb5c0 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#78d5f9), color-stop(100%,#2bbaf0)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #78d5f9 0%,#2bbaf0 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #78d5f9 0%,#2bbaf0 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #78d5f9 0%,#2bbaf0 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #78d5f9 0%,#2bbaf0 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#78d5f9', endColorstr='#2bbaf0',GradientType=0 ); /* IE6-9 */
+}
+
+.optionIncorrect{
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background: #ff011c; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ff4c5f 0%, #ff011c 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ff4c5f), color-stop(100%,#ff011c)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top,  #ff4c5f 0%,#ff011c 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top,  #ff4c5f 0%,#ff011c 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top,  #ff4c5f 0%,#ff011c 100%); /* IE10+ */
+    background: linear-gradient(to bottom,  #ff4c5f 0%,#ff011c 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff4c5f', endColorstr='#ff011c',GradientType=0 ); /* IE6-9 */
+}
+
+.scoreBox{
+    /*
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    position: fixed;
+    bottom: 0;
+    */
+    
+    padding: 5px;
+    margin-left: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 110px;
+    display: inline-block;
+}
+
+.scoreBoxTitle{
+    text-align: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+}
+
+.scoreBoxText{
+    text-align: center;
+    font-size: 28px;
+    text-transform: uppercase;
+}
+
+.nextButton{
+    float: right;
+    text-align: center;
+    padding: 5px;
+    margin-right: 10%;
+    margin-top: 5%;
+    margin-bottom: 2%;
+    width: 110px;
+    display: inline-block;
+}
+
+/* --------------------------- /QUESTION PAGE --------------------------- */
+

@@ -1,0 +1,11 @@
+# git ignore file
+
+dotnetsolution/Yawyt/YawytMvc2/bin*/
+dotnetsolution/Yawyt/YawytMvc2/obj*/
+dotnetsolution/Yawyt/YawytMvc2.Tests/bin*/
+dotnetsolution/Yawyt/YawytMvc2.Tests/obj*/
+
+dotnetsolution\Yawyt\YawytMvc2\bin*/
+dotnetsolution\Yawyt\YawytMvc2\obj*/
+dotnetsolution\Yawyt\YawytMvc2.Tests\bin*/
+dotnetsolution\Yawyt\YawytMvc2.Tests\obj*/
