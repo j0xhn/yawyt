@@ -7,6 +7,8 @@ Deadline:
 August 20th
 
 Useful Code:
+// Twitter API video
+https://www.youtube.com/watch?v=DMm5t4APGMM
 // implementing a +1 feature
 ```objective-c
 JDTalk.h
