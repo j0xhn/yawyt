@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>63CAC916-A405-48D5-A13A-FF7FF1A70409</string>
+	<key>IDESourceControlProjectName</key>
+	<string>YAWYT</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>CED0E98C-1008-48F3-B82C-56AA36400435</key>
+		<string>https://github.com/johndangerstorey/yawyt.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>yawyt_ios/YAWYT.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>CED0E98C-1008-48F3-B82C-56AA36400435</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/johndangerstorey/yawyt.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>CED0E98C-1008-48F3-B82C-56AA36400435</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>CED0E98C-1008-48F3-B82C-56AA36400435</string>
+			<key>IDESourceControlWCCName</key>
+			<string>yawyt</string>
+		</dict>
+	</array>
+</dict>
+</plist>
